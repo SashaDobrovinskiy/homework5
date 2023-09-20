@@ -1,0 +1,140 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: #ccc;
+}
+
+.container div {
+    outline: 3px solid red;
+}
+
+.first {
+    background: cyan;
+    font-size: 0px;
+}
+
+.first > div {
+    width: 400px;
+    height: 400px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.second {
+    background: goldenrod;
+    font-size: 0px;
+}
+
+.second > div > div {
+    height: 200px;
+}
+
+.second > div {
+    width: 800px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.second > div + div {
+    width: 400px;
+}
+
+.second > div + div > div {
+    height: 133.33px;
+}
+
+
+
+.third {
+    background: brown;
+    font-size: 0px;
+}
+
+.third > div {
+    display: inline-block;
+}
+
+.third-one {
+    width: 400px;
+    height: 400px;
+}
+
+.third-second {
+    width: 800px;
+}
+
+.third-second > div {
+    height: 200px;
+}
+
+.div.third-second-one {
+    height: auto;
+    font-size: 0px;
+}
+.third-second-one > div {
+    display: inline-block;
+    height: 200px;
+    width: 400px;
+    font-size: 20px;
+}
+
+.third-second-one > div + div {
+    background: crimson;
+}
+
+.third-second-one > div + div > div {
+    height: 100px;
+}
