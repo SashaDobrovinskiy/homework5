@@ -47,6 +47,13 @@ table {
 
 html, body {
     scroll-behavior: smooth;
+    font-size: 20px;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
 }
 
 .container {
@@ -62,20 +69,18 @@ html, body {
 
 .first {
     background: cyan;
-    font-size: 0px;
 }
 
 .first > div {
     width: 400px;
     height: 400px;
     display: inline-block;
-    font-size: 20px;
+    float: left;
 }
 
 
 .second {
     background: goldenrod;
-    font-size: 0px;
 }
 
 .second > div > div {
@@ -84,8 +89,8 @@ html, body {
 
 .second > div {
     width: 800px;
-    display: inline-block;
     font-size: 20px;
+    float: left;
 }
 
 .second > div + div {
@@ -104,7 +109,7 @@ html, body {
 }
 
 .third > div {
-    display: inline-block;
+    float: left;
 }
 
 .third-one {
@@ -122,13 +127,11 @@ html, body {
 
 .div.third-second-one {
     height: auto;
-    font-size: 0px;
 }
 .third-second-one > div {
-    display: inline-block;
     height: 200px;
     width: 400px;
-    font-size: 20px;
+    float: left;
 }
 
 .third-second-one > div + div {
