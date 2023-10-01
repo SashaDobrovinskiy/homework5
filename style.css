@@ -74,8 +74,9 @@ html, body {
 .first > div {
     width: 400px;
     height: 400px;
-    display: inline-block;
     float: left;
+    display: flex;
+    flex-direction: row;
 }
 
 
@@ -106,10 +107,13 @@ html, body {
 .third {
     background: brown;
     font-size: 0px;
+    display: flex;
+    flex-direction: row;
 }
 
 .third > div {
     float: left;
+    font-size: 20px;
 }
 
 .third-one {
